@@ -14,4 +14,4 @@ jobs:
                           uses: actions/checkout@v3
 
                         - name: checking CI
-                          run: echo "CI was successfull on the branch ${{ github.ref }}
+                          run: echo "CI was successfull on the branch ${{ github.ref }}"
