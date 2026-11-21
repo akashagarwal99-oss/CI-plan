@@ -1,0 +1,17 @@
+name: CI Pipeline
+
+on:
+        push:
+                branch: [ main, develop ]
+        pull_request:
+                branch : [ main, develop ]
+
+jobs:
+        build:
+                runs-on: ubuntu-latest
+                steps:
+                        - name: code checkout
+                          uses: actions/checkout@v3
+
+                        - name: checking CI
+                          run: echo "CI was successfull on the branch ${{ github.ref }}
